@@ -5,15 +5,14 @@ public class Acai {
     public double valor;
     public  boolean possuiAcrescimo;
 
-    public Acai(int tamanho, boolean possuiAcrescimo) {
+    public Acai() {
         this.tamanho = tamanho;
         this.possuiAcrescimo = possuiAcrescimo;
-        this.valor = calculaValorAcai();
     }
 
 
 
-    public double calculaValorAcai(){
+    public double calculaValorAcai(double valor, boolean possuiAcrescimo){
         if(tamanho == 300){
             valor = 8.00;
         }
@@ -27,10 +26,6 @@ public class Acai {
         }
         return valor;
 
-    }
-
-    public double getValor(){
-        return valor;
     }
 
 
